@@ -58,7 +58,7 @@ Setup and build steps
 3. Add system-gcc to your global USE flags (or for each package in
    package.use).
 
-4. Emerge gprbuild with USE="botstrap static", then rebuild gprbuild and
+4. Emerge gprbuild with USE="bootstrap static", then rebuild gprbuild and
    xmlada with at least USE="shared".  Note the later packages will depend
    on which shared/static/static-pic flags were used for gprbuild.
 
