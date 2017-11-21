@@ -41,7 +41,8 @@ The versions in this overlay are almost all 2017 and build with both gcc
 6.4.0 so the 2016 versions are used in these cases.
 
 .. note:: You can install these overlays with layman or just clone them
-          somewhere local and add them to PORTDIR_OVERLAYS.
+          somewhere local and add them to PORTDIR_OVERLAYS.  Also note the
+          name of this overlay is "dev-ada" and not "dev-ada-overlay".
 
 Setup and build steps
 =====================
@@ -56,7 +57,9 @@ Setup and build steps
 2. Set your new toolchain with gcc-config.
 
 3. Add system-gcc to your global USE flags (or for each package in
-   package.use).
+   package.use).  If you're using gcc-6.4.0, then you will need to
+   add both >=dev-ada/gnat_util-2017 and >=dev-ada/asis-2017 to
+   package.mask so it will install the 2016 versions instead
 
 4. Emerge gprbuild with USE="bootstrap static", then rebuild gprbuild and
    xmlada with at least USE="shared".  Note the later packages will depend
