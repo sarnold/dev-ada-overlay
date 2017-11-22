@@ -69,4 +69,12 @@ Setup and build steps
 
 6. Have fun!
 
+TODO
+====
 
+These ebuilds are still not working or haven't been updated yet:
+
+* gps-bin
+* polyorb
+
+Stay tuned...
