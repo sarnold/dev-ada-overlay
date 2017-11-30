@@ -25,8 +25,8 @@ tested with crossdev and should provide gnat tools for all supported arches
 (currently x86, amd64, arm, and arm64).
 
 The modified adacore packages provide relaxed dependencies and a system-gcc
-USE flag to build with the "standard" system toolchain with SUE=ada.  The
-primary dependencies for all of the adacore tools are gprbuild and xmlada.
+USE flag to build with the "standard" system toolchain when built with USE=ada.
+The primary dependencies for all of the adacore tools are gprbuild and xmlada.
 Since gprbuild needs itslef to build itslef, there is a bootstrap flag and
 a rebuild step for gprbuild/xmlada and then all the tools should build from
 there.
