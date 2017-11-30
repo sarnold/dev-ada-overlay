@@ -7,6 +7,7 @@ updates to use system-gcc instead of gnat-gpl (requires `ada-overlay`_ to
 get toolchain Ada language support via USE=ada).
 
 .. _ada-overlay: https://github.com/sarnold/ada-overlay
+.. _dev-ada-overlay: https://github.com/sarnold/dev-ada-overlay
 
 You can (optionally) add this overlay with layman::
 
@@ -52,7 +53,7 @@ Setup and build steps
    for more details.  Add "ada" to your global flags for both gcc and
    a handful of packages with optional Ada bindings or features.
 
-1. Install the `dev-ada-overlay`_ and setup as above.
+1. Install this overlay (the `dev-ada-overlay`_) and setup as above.
 
 2. Set your new toolchain with gcc-config.
 
